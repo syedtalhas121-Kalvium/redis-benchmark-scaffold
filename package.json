@@ -1,0 +1,17 @@
+{
+  "name": "redis-benchmark-scaffold",
+  "version": "1.0.0",
+  "description": "Threadbase benchmark scaffold: the same homepage feed query against Postgres and Redis (M4 · LU 4.2).",
+  "type": "module",
+  "scripts": {
+    "seed": "node src/seed.js",
+    "bench:pg": "node bench-pg.js",
+    "bench:redis": "node bench-redis.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.4.1",
+    "pg": "^8.12.0"
+  }
+}
